@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import Svg from 'react-native-svg';
+import IconHomeFilled from '../assets/images/iconHomeFilled.svg';
 
 interface Props {
   onPress?: () => void;
@@ -9,9 +9,7 @@ interface Props {
 export default function IconBtnLeft({ onPress }: Props) {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress} activeOpacity={0.8}>
-      <Svg width={28} height={28} >
-        
-      </Svg>
+      <IconHomeFilled width={28} height={28} />
     </TouchableOpacity>
   );
 }

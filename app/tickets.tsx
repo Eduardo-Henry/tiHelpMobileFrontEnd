@@ -9,7 +9,7 @@ import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { Dimensions, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import IconChat from '../assets/images/iconChat.svg';
-import IconPencil from '../assets/images/iconPencil.svg';
+import IconHomeFilled from '../assets/images/iconHomeFilled.svg';
 import ImgTicketNotCreated from '../assets/images/imgTicketNotCreated.svg';
 import styles from './tickets.styles';
 
@@ -68,7 +68,7 @@ export default function TicketsScreen() {
               ) : (
                 <View style={styles.headerContent}>
                   <Text style={styles.welcomeTitle}>Bem-Vindo, Eduardo!</Text>
-                  <Text style={styles.welcomeSub}>Escolha outro ticket ou crie outro chamado no botão "+"</Text>
+                  <Text style={styles.welcomeSub}>Escolha outro ticket ou crie outro chamado no botão &quot;+&quot;</Text>
                 </View>
               )}
               <ScrollView
@@ -100,7 +100,7 @@ export default function TicketsScreen() {
           <NavBottomBar
             onCenterPress={() => setShowCreate(true)}
             onRightPress={() => router.push({ pathname: '/chat' })}
-            Left={<IconPencil width={28} height={28} />}
+            Left={<IconHomeFilled width={28} height={28} />}
             Right={<IconChat width={28} height={28} />}
           />
           {sending && <ChamadoEnviado onComplete={onAnimationComplete} />}
