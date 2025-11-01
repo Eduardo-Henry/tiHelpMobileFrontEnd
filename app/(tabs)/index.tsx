@@ -1,9 +1,9 @@
-import LoginScreen from '@/app/login';
+import TicketsScreen from '@/app/tickets';
 import React from 'react';
 
 
 export default function Home() {
-  return <LoginScreen />;
+  return <TicketsScreen />;
 }
 
     
